@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="63ac74b7-60b8-4729-be9c-2bc4d439a7fe" activeEnvironment="Default" name="API Project_PTA_Post Request" soapui-version="5.5.0" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:RestService" id="662b1098-bfbb-4ca5-a206-5229e6aa02e1" wadlVersion="http://wadl.dev.java.net/2009/02" name="https://cocomm-tst001.dxc-londonmarket.com" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>https://cocomm-tst001.dxc-londonmarket.com</con:endpoint></con:endpoints><con:resource name="Submission" path="/api/v1/Submission" id="5d45b731-0b20-452b-8c40-ec3eb0984f4e"><con:settings/><con:parameters><con:parameter><con:name>Authorization</con:name><con:value/><con:style>HEADER</con:style><con:default/><con:description xsi:nil="true"/></con:parameter></con:parameters><con:resource name="{submissionId}" path="{submissionId}" id="61c2c0a0-b2d4-4e8f-8244-171235251f9e"><con:settings/><con:parameters><con:parameter><con:name>submissionId</con:name><con:value>submissionId</con:value><con:style>TEMPLATE</con:style><con:default>submissionId</con:default></con:parameter></con:parameters><con:method name="Method 1" id="1cbbf7ae-6ea3-495b-ac66-b5e11db25207" method="POST"><con:settings/><con:parameters/><con:representation type="FAULT"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>400</con:status><con:params/><con:element xmlns:de6="https://cocomm-tst001.dxc-londonmarket.com/api/v1/Submission/693de646-d8d9-4bb0-80a9-3a239739d089">de6:Fault</con:element></con:representation><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>200 201</con:status><con:params/><con:element xmlns:de6="https://cocomm-tst001.dxc-londonmarket.com/api/v1/Submission/693de646-d8d9-4bb0-80a9-3a239739d089">de6:Response</con:element></con:representation><con:request name="Request 1" id="3e5dc558-7ec9-417c-b281-c41ea8440e35" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://cocomm-tst001.dxc-londonmarket.com</con:endpoint><con:request>{
+  "umr": "B2345678901234567",
+  "treatyNumber": "12345",
+  "underwritingYear": 2019,
+  "bureaux": [
+    0
+  ],
+  "presentationDate": "2019-05-29T00:00:00+00:00",
+  "workPackageReference": "A123456"
+}</con:request><con:originalUri>https://cocomm-tst001.dxc-londonmarket.com/api/v1/Submission/693de646-d8d9-4bb0-80a9-3a239739d089</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="Authorization" value="Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiI1NGY4NTAzMi0yNjFhLTRmMTEtOTRmYi1lZGJkMjk1YzIwNDIiLCJpYXQiOjE1ODg5MzYxMjMsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL25hbWUiOiJ0ZXN0dXNlckBkeGMuY29tIiwiZm4iOiJUZXN0IFVzZXIiLCJpZCI6ImU1NGRkMjlkLThjYzQtNDQ3ZS04ZTliLWVhZDBjNWE1ZmQ4NSIsImVtIjoidGVzdHVzZXJAZHhjLmNvbSIsImVtYWlsIjoidGVzdHVzZXJAZHhjLmNvbSIsInN1cCI6IkZhbHNlIiwibmJmIjoxNTU3NDAwMTIzLCJleHAiOjE1ODg5MzYxMjMsImlzcyI6IkRYQy5KV1QuQXV0aCIsImF1ZCI6IkRYQy5KV1QuQXV0aCJ9.F5fJKGjBXlbTM3Lrgh1w-j7dy6qpKvHw0cauIh6Zmds"/>
+  <con:entry key="submissionId" value="693de646-d8d9-4bb0-80a9-3a239739d089"/>
+</con:parameters></con:request></con:method></con:resource><con:method name="Submission API" id="51842436-e4f3-46a3-82ba-17e0044fb64d" method="POST"><con:settings/><con:parameters/><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>401</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>201</con:status><con:params/><con:element xmlns:sub="https://cocomm-tst001.dxc-londonmarket.com/api/v1/Submission">sub:Response</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>404</con:status><con:params/><con:element>data</con:element></con:representation><con:request name="Create Submision id" id="e404785f-ebf6-4140-9393-71d7f056e231" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://cocomm-tst001.dxc-londonmarket.com</con:endpoint><con:request/><con:originalUri>https://cocomm-tst001.dxc-londonmarket.com/api/v1/Submission</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="Authorization" value="Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiI1NGY4NTAzMi0yNjFhLTRmMTEtOTRmYi1lZGJkMjk1YzIwNDIiLCJpYXQiOjE1ODg5MzYxMjMsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL25hbWUiOiJ0ZXN0dXNlckBkeGMuY29tIiwiZm4iOiJUZXN0IFVzZXIiLCJpZCI6ImU1NGRkMjlkLThjYzQtNDQ3ZS04ZTliLWVhZDBjNWE1ZmQ4NSIsImVtIjoidGVzdHVzZXJAZHhjLmNvbSIsImVtYWlsIjoidGVzdHVzZXJAZHhjLmNvbSIsInN1cCI6IkZhbHNlIiwibmJmIjoxNTU3NDAwMTIzLCJleHAiOjE1ODg5MzYxMjMsImlzcyI6IkRYQy5KV1QuQXV0aCIsImF1ZCI6IkRYQy5KV1QuQXV0aCJ9.F5fJKGjBXlbTM3Lrgh1w-j7dy6qpKvHw0cauIh6Zmds" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>Authorization</con:entry></con:parameterOrder></con:request></con:method></con:resource><con:resource name="contract-details" path="/api/v1/Contracts/{contractId}/contract-details" id="911999c9-5017-4daf-8e0e-e25ceba20b40"><con:settings/><con:parameters><con:parameter><con:name>contractId</con:name><con:value>contractId</con:value><con:style>TEMPLATE</con:style><con:default>contractId</con:default></con:parameter><con:parameter><con:name>Authorization</con:name><con:value/><con:style>HEADER</con:style><con:default/><con:description xsi:nil="true"/></con:parameter></con:parameters><con:method name="Method 1" id="7e099476-1028-4d9d-aed4-5af2883606a8" method="POST"><con:settings/><con:parameters/><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>404</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>404</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>404</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>404</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>404</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>404</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>404</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>201</con:status><con:params/><con:element xmlns:con1="https://cocomm-tst001.dxc-londonmarket.com/api/v1/Contracts/contractId/contract-details">con1:Response</con:element></con:representation><con:representation type="FAULT"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>400 404</con:status><con:params/><con:element xmlns:con1="https://cocomm-tst001.dxc-londonmarket.com/api/v1/Contracts/contractId/contract-details">con1:Fault</con:element></con:representation><con:request name="Request 1" id="5f5e8686-ce24-4ed7-bd17-7bd46855f584" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://cocomm-tst001.dxc-londonmarket.com</con:endpoint><con:request>{
+  "contractName": "my contract",
+  "contractStartDate": "2019-05-29T00:00:00+00:00",
+  "contractEndDate": "2020-05-29T00:00:00+00:00",
+  "underwritingYear": 2019,
+  "contractType": 0,
+  "periodNarrative": "this is my period narrative",
+  "accountFrequency": 0,
+  "bordereauFrequency": 0,
+  "renderingOfAccounts": 100,
+  "seatOfArbitrationNarrative": "this is my seat of arbitration narrative",
+  "premiumAccountWarrantyOptIn": true,
+  "premiumAccountWarrantyNarrative": "this is my premium account warranty narrative",
+  "treatyNumberLirma": "1234",
+  "treatyNumberLloyds": "Aa123/ ",
+  "treatyNumberIlu": "1234",
+  "noticeOfCancellation": "this is my notice",
+  "accountsChecked": false
+}</con:request><con:originalUri>https://cocomm-tst001.dxc-londonmarket.com/api/v1/Contracts/contractId/contract-details</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="Authorization" value="Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiI1NGY4NTAzMi0yNjFhLTRmMTEtOTRmYi1lZGJkMjk1YzIwNDIiLCJpYXQiOjE1ODg5MzYxMjMsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL25hbWUiOiJ0ZXN0dXNlckBkeGMuY29tIiwiZm4iOiJUZXN0IFVzZXIiLCJpZCI6ImU1NGRkMjlkLThjYzQtNDQ3ZS04ZTliLWVhZDBjNWE1ZmQ4NSIsImVtIjoidGVzdHVzZXJAZHhjLmNvbSIsImVtYWlsIjoidGVzdHVzZXJAZHhjLmNvbSIsInN1cCI6IkZhbHNlIiwibmJmIjoxNTU3NDAwMTIzLCJleHAiOjE1ODg5MzYxMjMsImlzcyI6IkRYQy5KV1QuQXV0aCIsImF1ZCI6IkRYQy5KV1QuQXV0aCJ9.F5fJKGjBXlbTM3Lrgh1w-j7dy6qpKvHw0cauIh6Zmds" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>contractId</con:entry><con:entry>Authorization</con:entry></con:parameterOrder></con:request></con:method></con:resource></con:interface><con:testSuite id="f82bf9d3-68b2-41f2-8aa3-6385b457de10" name="Post API Testing"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="9ff931ab-6142-474f-a439-648a4ec5e8cf" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Submission_API_Test_case" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="Submission" id="01007a99-41ea-4f66-8505-427d53909b2b"><con:settings/><con:config service="https://cocomm-tst001.dxc-londonmarket.com" resourcePath="/api/v1/Submission" methodName="Submission API" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Submission" id="e404785f-ebf6-4140-9393-71d7f056e231" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://cocomm-tst001.dxc-londonmarket.com</con:endpoint><con:request/><con:originalUri>https://cocomm-tst001.dxc-londonmarket.com/api/v1/Submission</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="d30261e8-5fea-49d1-899d-acfa2c74d7c7" name="Valid HTTP Status Codes"><con:configuration><codes>201</codes></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="Authorization" value="Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiI1NGY4NTAzMi0yNjFhLTRmMTEtOTRmYi1lZGJkMjk1YzIwNDIiLCJpYXQiOjE1ODg5MzYxMjMsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL25hbWUiOiJ0ZXN0dXNlckBkeGMuY29tIiwiZm4iOiJUZXN0IFVzZXIiLCJpZCI6ImU1NGRkMjlkLThjYzQtNDQ3ZS04ZTliLWVhZDBjNWE1ZmQ4NSIsImVtIjoidGVzdHVzZXJAZHhjLmNvbSIsImVtYWlsIjoidGVzdHVzZXJAZHhjLmNvbSIsInN1cCI6IkZhbHNlIiwibmJmIjoxNTU3NDAwMTIzLCJleHAiOjE1ODg5MzYxMjMsImlzcyI6IkRYQy5KV1QuQXV0aCIsImF1ZCI6IkRYQy5KV1QuQXV0aCJ9.F5fJKGjBXlbTM3Lrgh1w-j7dy6qpKvHw0cauIh6Zmds" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>Authorization</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="SubmissionID" id="22a4caa1-b188-4f43-90d6-5f782a457f04"><con:settings/><con:config service="https://cocomm-tst001.dxc-londonmarket.com" resourcePath="/api/v1/Submission/{submissionId}" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="SubmissionID" id="3e5dc558-7ec9-417c-b281-c41ea8440e35" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://cocomm-tst001.dxc-londonmarket.com</con:endpoint><con:request>{
+  "umr": "B2345678901234567",
+  "treatyNumber": "12345",
+  "underwritingYear": 2019,
+  "bureaux": [
+    0
+  ],
+  "presentationDate": "2019-05-29T00:00:00+00:00",
+  "workPackageReference": "A123456"
+}</con:request><con:originalUri>https://cocomm-tst001.dxc-londonmarket.com/api/v1/Submission/693de646-d8d9-4bb0-80a9-3a239739d089</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="88e4a8cd-ffc3-47e4-a3cf-57428464357c" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="Authorization" value="Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiI1NGY4NTAzMi0yNjFhLTRmMTEtOTRmYi1lZGJkMjk1YzIwNDIiLCJpYXQiOjE1ODg5MzYxMjMsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL25hbWUiOiJ0ZXN0dXNlckBkeGMuY29tIiwiZm4iOiJUZXN0IFVzZXIiLCJpZCI6ImU1NGRkMjlkLThjYzQtNDQ3ZS04ZTliLWVhZDBjNWE1ZmQ4NSIsImVtIjoidGVzdHVzZXJAZHhjLmNvbSIsImVtYWlsIjoidGVzdHVzZXJAZHhjLmNvbSIsInN1cCI6IkZhbHNlIiwibmJmIjoxNTU3NDAwMTIzLCJleHAiOjE1ODg5MzYxMjMsImlzcyI6IkRYQy5KV1QuQXV0aCIsImF1ZCI6IkRYQy5KV1QuQXV0aCJ9.F5fJKGjBXlbTM3Lrgh1w-j7dy6qpKvHw0cauIh6Zmds"/>
+  <con:entry key="submissionId" value="${Submission#Response#$.id}"/>
+</con:parameters></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="ContractID" id="c7946444-d72c-4e19-be75-7b1373b4d84e" disabled="true"><con:settings/><con:config service="https://cocomm-tst001.dxc-londonmarket.com" resourcePath="/api/v1/Contracts/{contractId}/contract-details" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="ContractID" id="5f5e8686-ce24-4ed7-bd17-7bd46855f584" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://cocomm-tst001.dxc-londonmarket.com</con:endpoint><con:request>{
+  "contractName": "my contract",
+  "contractStartDate": "2019-05-29T00:00:00+00:00",
+  "contractEndDate": "2020-05-29T00:00:00+00:00",
+  "underwritingYear": 2019,
+  "contractType": 0,
+  "periodNarrative": "this is my period narrative",
+  "accountFrequency": 0,
+  "bordereauFrequency": 0,
+  "renderingOfAccounts": 100,
+  "seatOfArbitrationNarrative": "this is my seat of arbitration narrative",
+  "premiumAccountWarrantyOptIn": true,
+  "premiumAccountWarrantyNarrative": "this is my premium account warranty narrative",
+  "treatyNumberLirma": "1234",
+  "treatyNumberLloyds": "Aa123/ ",
+  "treatyNumberIlu": "1234",
+  "noticeOfCancellation": "this is my notice",
+  "accountsChecked": false
+}</con:request><con:originalUri>https://cocomm-tst001.dxc-londonmarket.com/api/v1/Contracts/contractId/contract-details</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="37869fe4-6f61-4ed4-91b7-f3dcf9481e0e" name="Valid HTTP Status Codes"><con:configuration><codes>201</codes></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="Authorization" value="Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiI1NGY4NTAzMi0yNjFhLTRmMTEtOTRmYi1lZGJkMjk1YzIwNDIiLCJpYXQiOjE1ODg5MzYxMjMsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL25hbWUiOiJ0ZXN0dXNlckBkeGMuY29tIiwiZm4iOiJUZXN0IFVzZXIiLCJpZCI6ImU1NGRkMjlkLThjYzQtNDQ3ZS04ZTliLWVhZDBjNWE1ZmQ4NSIsImVtIjoidGVzdHVzZXJAZHhjLmNvbSIsImVtYWlsIjoidGVzdHVzZXJAZHhjLmNvbSIsInN1cCI6IkZhbHNlIiwibmJmIjoxNTU3NDAwMTIzLCJleHAiOjE1ODg5MzYxMjMsImlzcyI6IkRYQy5KV1QuQXV0aCIsImF1ZCI6IkRYQy5KV1QuQXV0aCJ9.F5fJKGjBXlbTM3Lrgh1w-j7dy6qpKvHw0cauIh6Zmds"/>
+  <con:entry key="contractId" value="${SubmissionID#Response#$.contractId}"/>
+</con:parameters><con:parameterOrder><con:entry>contractId</con:entry><con:entry>Authorization</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="PTN-531_Verify Contract Name field is mandatory" id="999e9854-552b-4105-ba50-714feaa1c753"><con:settings/><con:config service="https://cocomm-tst001.dxc-londonmarket.com" resourcePath="/api/v1/Contracts/{contractId}/contract-details" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="PTN-531_Verify Contract Name field is mandatory" id="5f5e8686-ce24-4ed7-bd17-7bd46855f584" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://cocomm-tst001.dxc-londonmarket.com</con:endpoint><con:request>{
+  "contractName": "",
+  "contractStartDate": "2019-05-29T00:00:00+00:00",
+  "contractEndDate": "2020-05-29T00:00:00+00:00",
+  "underwritingYear": 2019,
+  "contractType": 0,
+  "periodNarrative": "this is my period narrative",
+  "accountFrequency": 0,
+  "bordereauFrequency": 0,
+  "renderingOfAccounts": 100,
+  "seatOfArbitrationNarrative": "this is my seat of arbitration narrative",
+  "premiumAccountWarrantyOptIn": true,
+  "premiumAccountWarrantyNarrative": "this is my premium account warranty narrative",
+  "treatyNumberLirma": "1234",
+  "treatyNumberLloyds": "Aa123/ ",
+  "treatyNumberIlu": "1234",
+  "noticeOfCancellation": "this is my notice",
+  "accountsChecked": false
+}</con:request><con:originalUri>https://cocomm-tst001.dxc-londonmarket.com/api/v1/Contracts/contractId/contract-details</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="f631a917-cf39-45af-93a7-3bec6ae6c101" name="Valid HTTP Status Codes"><con:configuration><codes>400</codes></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="Authorization" value="Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiI1NGY4NTAzMi0yNjFhLTRmMTEtOTRmYi1lZGJkMjk1YzIwNDIiLCJpYXQiOjE1ODg5MzYxMjMsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL25hbWUiOiJ0ZXN0dXNlckBkeGMuY29tIiwiZm4iOiJUZXN0IFVzZXIiLCJpZCI6ImU1NGRkMjlkLThjYzQtNDQ3ZS04ZTliLWVhZDBjNWE1ZmQ4NSIsImVtIjoidGVzdHVzZXJAZHhjLmNvbSIsImVtYWlsIjoidGVzdHVzZXJAZHhjLmNvbSIsInN1cCI6IkZhbHNlIiwibmJmIjoxNTU3NDAwMTIzLCJleHAiOjE1ODg5MzYxMjMsImlzcyI6IkRYQy5KV1QuQXV0aCIsImF1ZCI6IkRYQy5KV1QuQXV0aCJ9.F5fJKGjBXlbTM3Lrgh1w-j7dy6qpKvHw0cauIh6Zmds"/>
+  <con:entry key="contractId" value="${SubmissionID#Response#$.contractId}"/>
+</con:parameters><con:parameterOrder><con:entry>contractId</con:entry><con:entry>Authorization</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="PTN-531_Verify Field must not accept above 255 characters" id="ba721e95-3277-456d-ab0d-9df023e5782f"><con:settings/><con:config service="https://cocomm-tst001.dxc-londonmarket.com" resourcePath="/api/v1/Contracts/{contractId}/contract-details" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="PTN-531_Verify Field must not accept above 255 characters" id="5f5e8686-ce24-4ed7-bd17-7bd46855f584" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://cocomm-tst001.dxc-londonmarket.com</con:endpoint><con:request>{
+  "contractName": "slkfiasdpos1234d8f9708ds908f890sd8fuiojdslkfjkldsjfjdshfkjshfjhsldkfi8s7d6f8s6d89fuksdmf,jdsuf8osd78fuiodsjflkjdslkfiposd8f908ds908f890sd8fuiojdslkfjkldsjfjdshfkjshfjhsldkfi8s7d6f8s6d89fuksdmf,jdsuf8osd78fuiodsjflkjdslkfiposd8f908908f890sd8fuiojdslkfjkldsjf",
+  "contractStartDate": "2019-05-29T00:00:00+00:00",
+  "contractEndDate": "2020-05-29T00:00:00+00:00",
+  "underwritingYear": 2019,
+  "contractType": 0,
+  "periodNarrative": "this is my period narrative",
+  "accountFrequency": 0,
+  "bordereauFrequency": 0,
+  "renderingOfAccounts": 100,
+  "seatOfArbitrationNarrative": "this is my seat of arbitration narrative",
+  "premiumAccountWarrantyOptIn": true,
+  "premiumAccountWarrantyNarrative": "this is my premium account warranty narrative",
+  "treatyNumberLirma": "1234",
+  "treatyNumberLloyds": "Aa123/ ",
+  "treatyNumberIlu": "1234",
+  "noticeOfCancellation": "this is my notice",
+  "accountsChecked": false
+}</con:request><con:originalUri>https://cocomm-tst001.dxc-londonmarket.com/api/v1/Contracts/contractId/contract-details</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="f631a917-cf39-45af-93a7-3bec6ae6c101" name="Valid HTTP Status Codes"><con:configuration><codes>400</codes></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="Authorization" value="Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiI1NGY4NTAzMi0yNjFhLTRmMTEtOTRmYi1lZGJkMjk1YzIwNDIiLCJpYXQiOjE1ODg5MzYxMjMsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL25hbWUiOiJ0ZXN0dXNlckBkeGMuY29tIiwiZm4iOiJUZXN0IFVzZXIiLCJpZCI6ImU1NGRkMjlkLThjYzQtNDQ3ZS04ZTliLWVhZDBjNWE1ZmQ4NSIsImVtIjoidGVzdHVzZXJAZHhjLmNvbSIsImVtYWlsIjoidGVzdHVzZXJAZHhjLmNvbSIsInN1cCI6IkZhbHNlIiwibmJmIjoxNTU3NDAwMTIzLCJleHAiOjE1ODg5MzYxMjMsImlzcyI6IkRYQy5KV1QuQXV0aCIsImF1ZCI6IkRYQy5KV1QuQXV0aCJ9.F5fJKGjBXlbTM3Lrgh1w-j7dy6qpKvHw0cauIh6Zmds"/>
+  <con:entry key="contractId" value="${SubmissionID#Response#$.contractId}"/>
+</con:parameters><con:parameterOrder><con:entry>contractId</con:entry><con:entry>Authorization</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="PTN-531_Verify Field must accept up to 255 characters" id="b165cf67-5215-4731-a238-0e754df2a727" disabled="true"><con:settings/><con:config service="https://cocomm-tst001.dxc-londonmarket.com" resourcePath="/api/v1/Contracts/{contractId}/contract-details" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="PTN-531_Verify Field must accept up to 255 characters" id="5f5e8686-ce24-4ed7-bd17-7bd46855f584" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://cocomm-tst001.dxc-londonmarket.com</con:endpoint><con:request>{
+  "contractName": "slkfipos1234d8f9708ds908f890sd8fuiojdslkfjkldsjfjdshfkjshfjhsldkfi8s7d6f8s6d89fuksdmf,jdsuf8osd78fuiodsjflkjdslkfiposd8f908ds908f890sd8fuiojdslkfjkldsjfjdshfkjshfjhsldkfi8s7d6f8s6d89fuksdmf,jdsuf8osd78fuiodsjflkjdslkfiposd8f908908f890sd8fuiojdslkfjkldsjf",
+  "contractStartDate": "2019-05-29T00:00:00+00:00",
+  "contractEndDate": "2020-05-29T00:00:00+00:00",
+  "underwritingYear": 2019,
+  "contractType": 0,
+  "periodNarrative": "this is my period narrative",
+  "accountFrequency": 0,
+  "bordereauFrequency": 0,
+  "renderingOfAccounts": 100,
+  "seatOfArbitrationNarrative": "this is my seat of arbitration narrative",
+  "premiumAccountWarrantyOptIn": true,
+  "premiumAccountWarrantyNarrative": "this is my premium account warranty narrative",
+  "treatyNumberLirma": "1234",
+  "treatyNumberLloyds": "Aa123/ ",
+  "treatyNumberIlu": "1234",
+  "noticeOfCancellation": "this is my notice",
+  "accountsChecked": false
+}</con:request><con:originalUri>https://cocomm-tst001.dxc-londonmarket.com/api/v1/Contracts/contractId/contract-details</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="f631a917-cf39-45af-93a7-3bec6ae6c101" name="Valid HTTP Status Codes"><con:configuration><codes>201</codes></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="Authorization" value="Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiI1NGY4NTAzMi0yNjFhLTRmMTEtOTRmYi1lZGJkMjk1YzIwNDIiLCJpYXQiOjE1ODg5MzYxMjMsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL25hbWUiOiJ0ZXN0dXNlckBkeGMuY29tIiwiZm4iOiJUZXN0IFVzZXIiLCJpZCI6ImU1NGRkMjlkLThjYzQtNDQ3ZS04ZTliLWVhZDBjNWE1ZmQ4NSIsImVtIjoidGVzdHVzZXJAZHhjLmNvbSIsImVtYWlsIjoidGVzdHVzZXJAZHhjLmNvbSIsInN1cCI6IkZhbHNlIiwibmJmIjoxNTU3NDAwMTIzLCJleHAiOjE1ODg5MzYxMjMsImlzcyI6IkRYQy5KV1QuQXV0aCIsImF1ZCI6IkRYQy5KV1QuQXV0aCJ9.F5fJKGjBXlbTM3Lrgh1w-j7dy6qpKvHw0cauIh6Zmds"/>
+  <con:entry key="contractId" value="${SubmissionID#Response#$.contractId}"/>
+</con:parameters><con:parameterOrder><con:entry>contractId</con:entry><con:entry>Authorization</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="PTN-531_Verify ContractName field must accept upper and lower case letters" id="9dcf66d3-5819-4f53-8542-6af527cdf675" disabled="true"><con:settings/><con:config service="https://cocomm-tst001.dxc-londonmarket.com" resourcePath="/api/v1/Contracts/{contractId}/contract-details" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="PTN-531_Verify ContractName field must accept upper and lower case letters" id="5f5e8686-ce24-4ed7-bd17-7bd46855f584" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://cocomm-tst001.dxc-londonmarket.com</con:endpoint><con:request>{
+  "contractName": "SAPOIERTR12d8f9708ds908f890sd8fuiojdslkfjkldsjfjdshfkjshfjhsldkfi8s7d6f8s6d89fuksdmf,jdsuf8osd78fuiodsjflkjdslkfiposd8f908ds908f890sd8fuiojdslkfjkldsjfjdshfkjshfjhsldkfi8s7d6f8s6d89fuksdmf,jdsuf8osd78fuiodsjflkjdslkfiposd8f908908f890sd8fuiojdslkfjkldsjf",
+  "contractStartDate": "2019-05-29T00:00:00+00:00",
+  "contractEndDate": "2020-05-29T00:00:00+00:00",
+  "underwritingYear": 2019,
+  "contractType": 0,
+  "periodNarrative": "this is my period narrative",
+  "accountFrequency": 0,
+  "bordereauFrequency": 0,
+  "renderingOfAccounts": 100,
+  "seatOfArbitrationNarrative": "this is my seat of arbitration narrative",
+  "premiumAccountWarrantyOptIn": true,
+  "premiumAccountWarrantyNarrative": "this is my premium account warranty narrative",
+  "treatyNumberLirma": "1234",
+  "treatyNumberLloyds": "Aa123/ ",
+  "treatyNumberIlu": "1234",
+  "noticeOfCancellation": "this is my notice",
+  "accountsChecked": false
+}</con:request><con:originalUri>https://cocomm-tst001.dxc-londonmarket.com/api/v1/Contracts/contractId/contract-details</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="f631a917-cf39-45af-93a7-3bec6ae6c101" name="Valid HTTP Status Codes"><con:configuration><codes>201</codes></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="Authorization" value="Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiI1NGY4NTAzMi0yNjFhLTRmMTEtOTRmYi1lZGJkMjk1YzIwNDIiLCJpYXQiOjE1ODg5MzYxMjMsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL25hbWUiOiJ0ZXN0dXNlckBkeGMuY29tIiwiZm4iOiJUZXN0IFVzZXIiLCJpZCI6ImU1NGRkMjlkLThjYzQtNDQ3ZS04ZTliLWVhZDBjNWE1ZmQ4NSIsImVtIjoidGVzdHVzZXJAZHhjLmNvbSIsImVtYWlsIjoidGVzdHVzZXJAZHhjLmNvbSIsInN1cCI6IkZhbHNlIiwibmJmIjoxNTU3NDAwMTIzLCJleHAiOjE1ODg5MzYxMjMsImlzcyI6IkRYQy5KV1QuQXV0aCIsImF1ZCI6IkRYQy5KV1QuQXV0aCJ9.F5fJKGjBXlbTM3Lrgh1w-j7dy6qpKvHw0cauIh6Zmds"/>
+  <con:entry key="contractId" value="${SubmissionID#Response#$.contractId}"/>
+</con:parameters><con:parameterOrder><con:entry>contractId</con:entry><con:entry>Authorization</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="PTN-531_Verify ContractName field must trim spaces" id="0aca5657-0358-435d-a2d3-008925bd3eb7"><con:settings/><con:config service="https://cocomm-tst001.dxc-londonmarket.com" resourcePath="/api/v1/Contracts/{contractId}/contract-details" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="PTN-531_Verify ContractName field must trim spaces" id="5f5e8686-ce24-4ed7-bd17-7bd46855f584" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://cocomm-tst001.dxc-londonmarket.com</con:endpoint><con:request>{
+  "contractName": "  SAPOIERTR12d8f 9708ds908f890sd8fuiojdslkfjkldsjfjdshfkjshfjhsldkfi8s7d6f8s6d89fuksdmf,jdsuf8osd78fuiodsjflkjdslkfiposd8f908ds908f890sd8fuiojdslkfjkldsjfjdshfkjshfjhsldkfi8s7d6f8s6d89fuksdmf    ",
+  "contractStartDate": "2019-05-29T00:00:00+00:00",
+  "contractEndDate": "2020-05-29T00:00:00+00:00",
+  "underwritingYear": 2019,
+  "contractType": 0,
+  "periodNarrative": "this is my period narrative",
+  "accountFrequency": 0,
+  "bordereauFrequency": 0,
+  "renderingOfAccounts": 100,
+  "seatOfArbitrationNarrative": "this is my seat of arbitration narrative",
+  "premiumAccountWarrantyOptIn": true,
+  "premiumAccountWarrantyNarrative": "this is my premium account warranty narrative",
+  "treatyNumberLirma": "1234",
+  "treatyNumberLloyds": "Aa123/ ",
+  "treatyNumberIlu": "1234",
+  "noticeOfCancellation": "this is my notice",
+  "accountsChecked": false
+}</con:request><con:originalUri>https://cocomm-tst001.dxc-londonmarket.com/api/v1/Contracts/contractId/contract-details</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="f631a917-cf39-45af-93a7-3bec6ae6c101" name="Valid HTTP Status Codes"><con:configuration><codes>201</codes></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="Authorization" value="Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiI1NGY4NTAzMi0yNjFhLTRmMTEtOTRmYi1lZGJkMjk1YzIwNDIiLCJpYXQiOjE1ODg5MzYxMjMsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL25hbWUiOiJ0ZXN0dXNlckBkeGMuY29tIiwiZm4iOiJUZXN0IFVzZXIiLCJpZCI6ImU1NGRkMjlkLThjYzQtNDQ3ZS04ZTliLWVhZDBjNWE1ZmQ4NSIsImVtIjoidGVzdHVzZXJAZHhjLmNvbSIsImVtYWlsIjoidGVzdHVzZXJAZHhjLmNvbSIsInN1cCI6IkZhbHNlIiwibmJmIjoxNTU3NDAwMTIzLCJleHAiOjE1ODg5MzYxMjMsImlzcyI6IkRYQy5KV1QuQXV0aCIsImF1ZCI6IkRYQy5KV1QuQXV0aCJ9.F5fJKGjBXlbTM3Lrgh1w-j7dy6qpKvHw0cauIh6Zmds"/>
+  <con:entry key="contractId" value="${SubmissionID#Response#$.contractId}"/>
+</con:parameters><con:parameterOrder><con:entry>contractId</con:entry><con:entry>Authorization</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:tearDownScript>// Code to execute the GenerateCSVReport test step
+testRunner.testCase.testSuite.project.testSuites["Reporting &amp; Result"].testCases["Reporting_Utility"].
+testSteps["GenerateCSVReport"].run(testRunner, context);</con:tearDownScript><con:properties/></con:testCase><con:properties/></con:testSuite><con:testSuite id="12e7cb5d-359f-44b8-bd23-46c624afa73f" name="Reporting &amp; Result" disabled="true"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="9fca54c4-48f7-41bb-acdd-951e641c7d0e" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Reporting_Utility" searchProperties="true"><con:settings/><con:testStep type="groovy" name="GenerateCSVReport" id="6fee4bf5-b814-4e2e-91ac-7f90111a3d34"><con:settings/><con:config><script>
+// Try-catch block to handle exceptions
+try {
+// 1. Create a "SoapUIResults" folder in the project path 
+      // Retrieve the project root folder
+      def projectPath = new com.eviware.soapui.support.GroovyUtils(context).projectPath
+      // Specify a folder inside project root to store the results
+      String folderPath = projectPath + "/SoapUIResults";
+      // Create a File object for the specified path
+      def resultFolder = new File(folderPath);
+      // Check for existence of folder and create a folder
+      if(!resultFolder.exists())
+      {
+        resultFolder.mkdirs();
+      }
+/* ------------------------------------------------------------------------------- */
+// 2. Create a subfolder (with timestamp) to store the request-response local copy 
+      // Retrieve the latest execution date-time
+      Date d = new Date();
+      def executionDate = d.format("dd-MMM-yyyy HH_mm");
+      // Specify the subfolder path with name Request-Response_CurrentTimeStamp
+      String subfolderPath1 = folderPath+ "/Request-Response_"+executionDate;
+      // Create this sub-folder
+      new File(subfolderPath1).mkdirs();
+/* ------------------------------------------------------------------------------- */
+// 3. Create another subfolder "CSV Reports" to store the reports file 
+      // Specify the subfolder path with name CSV Reports
+      String subfolderPath2 = folderPath+ "/CSV Reports";
+      // Create this sub-folder
+      new File(subfolderPath2).mkdirs();
+/* ------------------------------------------------------------------------------- */
+// 4. Create a Report.csv file inside the CSV Reports folder 
+      // Create a File object for Report csv file (with timestamp)
+      def reportFile = new File(subfolderPath2, "Report_"+executionDate+".csv");
+      // Check for existence of report file and create a file
+      if(!reportFile.exists())
+      {
+        reportFile.createNewFile();
+        // Create required column names in the report file
+        reportFile.write('"Test Suite","Test Case","Test Step","Step Type","Step Status",'
+                        +'"Result message","Execution Date"');
+      }
+/* ------------------------------------------------------------------------------- */
+// 5. Inserting data in the file
+      // Iterate over all the test steps results
+  for(stepResult in testRunner.getResults())
+  {
+    // Retrieve Test Suite name
+   def testSuite = testRunner.testCase.testSuite.name;
+   // Retrieve Test Case name
+   def testCase = testRunner.testCase.name;
+   // Retrieve Test Step
+   def testStep = stepResult.getTestStep();
+   // Retrieve Test Step name
+   def testStepName = testStep.name
+   // Retrieve Test Step type
+   def type = testStep.config.type
+   // Retrieve Test Step status
+   def status = stepResult.getStatus()
+   // Creating new line in report file
+   reportFile.append('\n');
+   // Write all the necessary information in the file
+   reportFile.append('"' + testSuite + '",');
+   reportFile.append('"' + testCase + '",');
+   reportFile.append('"' + testStepName + '",');
+   reportFile.append('"' + type + '",');
+   reportFile.append('"' + status + '",');
+   // Retrieve the test result messages
+   reportFile.append('"');
+   for(resMessage in stepResult.getMessages())
+   {
+     // Write messages and separate multiple messages by new line
+     reportFile.append('Message:' + resMessage + '\n');
+   }
+   reportFile.append('",');
+   //Write executionDate in the file
+   reportFile.append('"' + executionDate + '",');
+/* ------------------------------------------------------------------------------- */
+// 6. Extract the request and response and save it to external file
+      // Verify if the test step type is request: SOAP project or restrequest: REST project
+        if((type=="request").or(type=="restrequest"))
+        {
+          // Extract the request from the test step
+          def extRequest = testStep.properties["Request"].value;    
+      // Create a file in the reports folder and write the request
+      // Naming convention: request_TestSuiteName_TestCaseName_TestStepName.txt
+      def requestFile=subfolderPath1+"/request_"+testSuite+"_"+testCase+"_"+testStepName+".txt";
+      def rqfile = new File(requestFile);
+      rqfile.write(extRequest, "UTF-8");
+      // Extract the response from the test step
+      def extResponse = stepResult.getResponseContent();    
+      // Create a file in the reports folder and write the response
+      // Naming convention: response_TestSuiteName_TestCaseName_TestStepName.txt
+      def responseFile=subfolderPath1+"/response_"+testSuite+"_"+testCase+"_"+testStepName+".txt";
+      def rsfile = new File(responseFile);
+      rsfile.write(extResponse, "UTF-8");
+     }
+   }
+ }
+catch(exc)
+{
+   log.error("Exception happened: " + exc.toString());
+}</script></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/><con:sensitiveInformation/></con:soapui-project>
